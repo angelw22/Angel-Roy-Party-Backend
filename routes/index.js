@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Airtable = require('airtable');
+console.log('api key is', process.env.API_KEY)
 var base = new Airtable({apiKey: process.env.API_KEY}).base('appblUmB9PQbUjqlu');
 
 /* GET home page. */
